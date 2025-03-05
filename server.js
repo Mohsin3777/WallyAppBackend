@@ -1,7 +1,7 @@
 const app = require('./src/app');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const serverless = require("serverless-http");
+// const serverless = require("serverless-http");
 
 // Load environment variables
 dotenv.config();
@@ -20,4 +20,4 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);
